@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="navbar">
+            <div class="inner__nav">
+                <p>Total Hits : 89323</p>
+                <a href="#">Home</a>
+            </div>
+        </div>
+
+        <!-- // Heading -->
+        <div class="heading">
+            <h1>TATA MOTORS - Standard Information System</h1>
+        </div>
+
+        <!-- // Main Content -->
+        <p class="mini_heading">Inquiry based on :</p>
+        <div class="main_content">
+            <div class="detail">
+                <form action="#" method="post">
+                    <div class="left">
+                        <label><input type="checkbox" name="inquiryType" value="volumeNo"> Based on Volume No : </label>
+                    </div>
+                    <div class="right">
+                        <label>Volume No</label>
+                        <select name="volumeNo">${volumeNumbers}
+                        	<option value="1 POLICY STDS & ENGG DATA">1 POLICY STDS & ENGG DATA</option>
+        					<option value="2 DESIGN DATA & STD. PARTS">2 DESIGN DATA & STD. PARTS</option>
+        					<option value="3 HYD. FITTINGS & STD. PARTS">3 HYD. FITTINGS & STD. PARTS</option>
+        					<option value="4 TOOLS & GAUGES">4 TOOLS & GAUGES</option>
+        					<option value="5 MATERIALS">5 MATERIALS</option>
+        					<option value="6 SHOP EQUIPMENT & ELECTRICALS">6 SHOP EQUIPMENT & ELECTRICALS</option>
+        					<option value="8 JIGS & FIXTURES">8 JIGS & FIXTURES</option>
+        					<option value="13 TATA MOTORS SPECIFICATIONS">13 TATA MOTORS SPECIFICATIONS</option>
+        					<option value="14 SUPPLY SPECIFICATIONS">14 SUPPLY SPECIFICATIONS</option>
+        					<option value="16 AGGREGATE NUMBERING">16 AGGREGATE NUMBERINGS</option>
+        					<option value="17 CHASSIS NUMBERING">17 CHASSIS NUMBERING</option>
+        					<option value="19 SYSTEM SPECIFICATIONS">19 SYSTEM SPECIFICATIONS</option>
+        					<option value="21 ELECTRIC VEHICLE STANDARDS">21 ELECTRIC VEHICLE STANDARDS</option>
+        					<option value="99 HAND BOOKS/STOCK LISTS">99 HAND BOOKS/STOCK LISTS</option>
+        					<option value="99 HAND BOOKS">99 HAND BOOKS</option>
+        			
+        				</select>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="detail">
+                <form action="SubmitServlet" method="post">
+                    <div class="left">
+                        <label><input type="checkbox" name="inquiryType" value="combination"> Based on
+                            Combination:</label>
+                    </div>
+                    <div class="detail__inner">
+                        <div class="right">
+                            <label>TS/SS NUMBER </label>
+                            <!-- <p>Error: ${combinationError}</p> -->
+                            <input type="text" name="label1">
+                        </div>
+                        <div class="right">
+                            <label>KEYWORD </label>
+                            <select name="label2">${combinationDataList}
+                            	<option value=" "></option>
+                            	<option value="-">-</option>
+                            	<option value="1">1</option>
+                            	<option value="1512">1512</option>
+                            	<option value="1612TC">1612TC</option>
+                            	<option value="1615TC">1615TC</option>
+                            	<option value="3 COAT">3 COAT</option>
+                            	<option value="3516TC">3516TC</option>
+                            	<option value="4 COATS">4 COATS</option>
+                            	<option value="7.49T">7.49T</option>
+                            	<option value="709">709</option>
+                            	<option value="709 BSIII">709 BSIII</option>
+                            	<option value="ABBREVIATION">ABBREVIATION</option>
+                            	<option value="ABRASION">ABRASION</option>
+                            	<option value="ABRASION RESISTANCE">ABRASION RESISTANCE</option>
+                            	<option value="ABRASIVE">ABRASIVE</option>
+                            	<option value="ABSOLUTE">ABSOLUTE</option>
+                            	<option value="ACE GOLD">ACE GOLD</option>
+                            	<option value="ACRYLIC SHEET">ACRYLIC SHEET</option>
+                            	<option value="ACRYLONITRILE BUTADIENE">ACRYLONITRILE BUTADIENE</option>
+                            	<option value="ACRYLONITRILE STYRENE">ACRYLONITRILE STYRENE</option>
+                            	<option value="ACTUATOR">ACTUATOR</option>
+                            	<option value="ADAPTER">ADAPTER</option>
+                            	<option value="ADAPTOR">ADAPTOR</option>
+                            	<option value="ADAS">ADAS</option>
+                            	<option value="ADHESION">ADHESION</option>
+                            	<option value="ADHESIVE">ADHESIVE</option>
+                            	<option value="ADJUSTER">ADJUSTER</option>
+                            	<option value="ADVANCED">ADVANCED</option>
+                            	<option value="AGGREGATE">AGGREGATE</option>
+                            	<option value="AGGREGATE NO">AGGREGATE NO</option>
+                            	<option value="AGGREGATE NUMBERING">AGGREGATE NUMBERING</option>
+                            	<option value="AIR">AIR</option>
+                            	<option value="AIR BRAKE">AIR BRAKE</option>
+                            	<option value="AIR CIRCULATOR">AIR CIRCULATOR</option>
+                            	<option value="AIR CONDITIONING">AIR CONDITIONING</option>
+                            	<option value="AIR DRYING PAINT">AIR DRYING PAINT</option>
+                            	<option value="AIR FILTER">AIR FILTER</option>
+                            	<option value="AL CASTING">AL CASTING</option>
+                            	<option value="ALLOYING ELEMENT">ALLOYING ELEMENT</option>
+                            	<option value="ALTERNATOR">ALTERNATOR</option>
+                            	<option value="ALUMINIUM">ALUMINIUM</option>
+                            	<option value="AMMETER">AMMETER</option>
+                            	<option value="ANALYSIS">ANALYSIS</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label>TS DESCRIPTION </label>
+                            <input type="text" name="label3">
+                        </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div class="detail">
+            <form action="SubmitServlet" method="post">
+                <div class="left">
+
+                    <label><input type="checkbox" name="inquiryType" value="date"> Standard Issue for period</label>
+                </div>
+
+                <div class="detail__inner">
+                    <div class="right">
+                        <label>Start Date: </label>
+                        <input type="text" name="startDate" placeholder="YYYY/MM/DD">
+                    </div>
+                    <div class="right">
+                        <label>End Date: </label>
+                        <input type="text" name="endDate" placeholder="YYYY/MM/DD">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <input class="submit_btn" type="submit" value="Submit/Enter to view standard">
+        </form>
+        </div>
+
+
+        <div class="footer">
+            <p>For any queries / suggestion please contact , Standardization Dept. ERC Pune Tel 020-6613280</p>
+        </div>
+    </section>
+</body>
+
+</html>
